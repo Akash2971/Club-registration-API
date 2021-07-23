@@ -2,6 +2,11 @@ const router = require('express').Router();
 const Student = require('../models/Student');
 const { registerValidation } = require('../validation');
 
+
+router.post('/',(req,res)=>{
+    res.send({"message":"Welcome to Club Registration Api"})
+})
+
 router.post('/api/register',async (req,res)=>{
     
     const {error} = registerValidation(req.body);
