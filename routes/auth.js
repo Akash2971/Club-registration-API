@@ -3,7 +3,7 @@ const Student = require('../models/Student');
 const { registerValidation } = require('../validation');
 
 
-router.post('/',(req,res)=>{
+router.get('/',(req,res)=>{
     res.send({"message":"Welcome to Club Registration Api"})
 })
 
